@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,r=0,s=0,fc=0,e=0,t=0,q,fg=0,w=0,y=0,k=0;
+    int n,q,r=0,s=0,fc=0,fg=0,a=0,e=0,k=0,y=0,l=0;
     scanf("%d",&n);
     q=n;
     while(n!=0)
@@ -15,19 +15,19 @@ int main()
     }
     while(q!=0)
     {
-        e=q%10;
+        a=q%10;
         q=q/10;
-        t=t*10+e;
+        e=e*10+a;
     }
-    while(t!=0)
+    while(e!=0)
     {
-        w=t%10;
-        t=t/10;
-        y=y*10+w;
+        k=e%10;
+        e=e/10;
+        y=y*10+k;
         fg=fg+1;
         if(fg==3)
         break;
     }
-    k=y*1000+s;
-    printf("%d",k);
+    l=y*1000+s;
+    printf("%d",l);
 }
