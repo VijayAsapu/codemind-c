@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,r=0,s=0,fc=0,e=0,t=0,q,fg=0,w=0,y=0,k=0;
+    scanf("%d",&n);
+    q=n;
+    while(n!=0)
+    {
+        r=n%10;
+        n=n/10;
+        s=s*10+r;
+        fc=fc+1;
+        if(fc==3)
+        break;
+    }
+    while(q!=0)
+    {
+        e=q%10;
+        q=q/10;
+        t=t*10+e;
+    }
+    while(t!=0)
+    {
+        w=t%10;
+        t=t/10;
+        y=y*10+w;
+        fg=fg+1;
+        if(fg==3)
+        break;
+    }
+    k=y*1000+s;
+    printf("%d",k);
+}
