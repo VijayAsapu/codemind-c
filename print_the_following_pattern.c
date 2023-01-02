@@ -5,9 +5,9 @@ int main()
     scanf("%d",&n);
     for(rows=1;rows<=n;rows++)
     {
-        for(cols=1;cols<=rows;cols++)
+        for(cols=1;cols<=n;cols++)
         {
-            printf("%d",cols);
+            printf("%c ",rows+64);
         }
         printf("
 ");
