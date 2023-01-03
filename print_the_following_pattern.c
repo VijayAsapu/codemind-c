@@ -5,9 +5,12 @@ int main()
     scanf("%d",&n);
     for(rows=1;rows<=n;rows++)
     {
-        for(cols=1;cols<=n-rows+1;cols++)
+        for(cols=1;cols<=rows;cols++)
         {
-            printf("%d",cols);
+            if(cols==1||rows==n||rows==cols)
+            printf("*");
+            else
+            printf(" ");
         }
         printf("
 ");
