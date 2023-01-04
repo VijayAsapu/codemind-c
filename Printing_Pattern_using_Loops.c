@@ -2,31 +2,31 @@
 int main()
 {
     int n,i,j;
-    scanf("%d", &n);
-    int len=2*n-1;
-    int start=0;
-    int end=len-1;
-    int a[len][len];
+    scanf("%d",&n);
+    int rows=2*n-1;
+    int s=0;
+    int cols=rows-1;
+    int a[rows][rows];
   while(n!=0)
   {
-      for(i=start;i<=end;i++)
+      for(i=s;i<=cols;i++)
       {
-          for(j=start;j<=end;j++)
+          for(j=s;j<=cols;j++)
           {
-              if(i==start || i==end || j==start || j==end)
+              if(i==s || i==cols || j==s || j==cols)
               {
                   a[i][j]=n;
               }
           }
 
       }
-        start++;
-          end--;
-          n--;
+        s++;
+        cols--;
+        n--;
   }
-  for(i=0;i<len;i++)
+  for(i=0;i<rows;i++)
   {
-      for(j=0;j<len;j++)
+      for(j=0;j<rows;j++)
       {
           printf("%d ",a[i][j]);
       }
