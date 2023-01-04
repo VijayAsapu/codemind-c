@@ -1,25 +1,23 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    int diviorsCount = 0;
-    for (int i = 1; i <= n; i++)
+    int n,i,j,c,dc;
+    scanf("%d",&n);
+    dc=0;
+    for(i=1;i<=n;i++)
     {
-        int count = 0;
-        for (int j = 1; j <= i; j++)
+        c=0;
+        for(j=1;j<=i;j++)
         {
-            if (i % j == 0)
-            {
-                count++;
-            }
+         if(i%j==0)
+         c++;
         }
-        if (count == 9)
+        if(c==9)
         {
-            printf("%d ",i);
-            diviorsCount++;
+        printf("%d ",i);
+        dc++;
         }
     }
     printf("
-Total=%d",diviorsCount);
+Total=%d",dc);
 }
